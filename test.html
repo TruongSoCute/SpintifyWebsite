@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCloud Landing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #76b5c5 0%, #4a90a4 100%);
+            border-radius: 20px;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            min-height: 500px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo::before {
+            content: '';
+            width: 30px;
+            height: 20px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" fill="white"><path d="M0 10c0-5.5 4.5-10 10-10s10 4.5 10 10c0 5.5-4.5 10-10 10S0 15.5 0 10zm20 0c0-5.5 4.5-10 10-10s10 4.5 10 10c0 5.5-4.5 10-10 10s-10-4.5-10-10z"/></svg>') no-repeat;
+            background-size: contain;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-dark {
+            background: #333;
+            color: white;
+        }
+
+        .btn-dark:hover {
+            background: #444;
+        }
+
+        .btn-link {
+            background: transparent;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            padding: 0 40px 40px;
+            min-height: 400px;
+            position: relative;
+        }
+
+        .main-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 500px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .btn-primary {
+            background: #333;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background: #444;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 15px 30px;
+            font-size: 16px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .pagination-dots {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: white;
+        }
+
+        .artist-image {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(45deg, #2a2a2a, #4a4a4a);
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .artist-credit {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            text-align: right;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        .search-section {
+            background: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .search-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-box {
+            flex: 1;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #333;
+            color: white;
+            font-size: 16px;
+        }
+
+        .search-input::placeholder {
+            color: #999;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .or-text {
+            color: #999;
+            font-size: 18px;
+        }
+
+        .upload-btn {
+            background: white;
+            color: #333;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-btn:hover {
+            background: #f0f0f0;
+        }
+
+        .trending-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .trending-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                margin: 10px;
+            }
+
+            .header {
+                padding: 15px 20px;
+            }
+
+            .content-wrapper {
+                padding: 0 20px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-title {
+                font-size: 2.5rem;
+            }
+
+            .artist-image {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                margin-top: 20px;
+            }
+
+            .search-wrapper {
+                flex-direction: column;
+            }
+
+            .search-box {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <header class="header">
+            <div class="logo">
+                SOUNDCLOUD
+            </div>
+            <nav class="nav-buttons">
+                <button class="btn btn-outline">Sign in</button>
+                <button class="btn btn-dark">Create account</button>
+                <a href="#" class="btn-link">For Artists</a>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h1 class="main-title">It all starts with an upload.</h1>
+                <p class="subtitle">From bedrooms and broom closets to studios and stadiums, SoundCloud is where you define what's next in music. Just hit upload.</p>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary">Upload</button>
+                    <button class="btn btn-secondary">Explore Artist Pro</button>
+                </div>
+
+                <div class="pagination-dots">
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <div class="artist-image"></div>
+            
+            <div class="artist-credit">
+                1900Rugrat<br>
+                <small>Ascending Artist</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-section">
+        <div class="search-wrapper">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search for artists, bands, tracks, podcasts">
+                <div class="search-icon">🔍</div>
+            </div>
+            <span class="or-text">or</span>
+            <button class="upload-btn">Upload your own</button>
+        </div>
+    </div>
+
+    <div class="trending-section">
+        <h2 class="trending-title">Hear what's trending for free in the SoundCloud community</h2>
+    </div>
+
+    <script>
+        // Add some interactivity to the pagination dots
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                dots.forEach(d => d.classList.remove('active'));
+                dot.classList.add('active');
+            });
+        });
+
+        // Add hover effects and smooth transitions
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
