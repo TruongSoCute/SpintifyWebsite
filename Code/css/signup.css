@@ -1,0 +1,202 @@
+body.night-mode {
+    background: #121212;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.box-login {
+    background: #181818;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.logo-spintify {
+    width: 24px;
+    height: 24px;
+}
+
+.web-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-login label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.input-data {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-data:focus {
+    border-color: #fff;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.form-group.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-group.checkbox-group input[type="checkbox"] {
+    flex-shrink: 0;
+}
+
+.form-group.checkbox-group label {
+    display: inline;
+    margin-bottom: 0;
+}
+
+.form-group label a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    background: #fff;
+    color: #121212;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+.register-option {
+    text-align: center;
+    margin-top: 20px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.register-option a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.back-home {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.back-home a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.back-home a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .box-login {
+        padding: 30px 20px;
+    }
+    
+    .title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .box-login {
+        padding: 25px 15px;
+    }
+    
+    .title {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-data {
+        padding: 10px 12px;
+    }
+    
+    .login-btn {
+        padding: 10px 0;
+    }
+    
+    .form-group label {
+        font-size: 0.85rem;
+    }
+    
+    .form-group label a {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 320px) {
+    .web-name {
+        font-size: 1rem;
+    }
+    
+    .box-login {
+        padding: 20px 12px;
+    }
+}
