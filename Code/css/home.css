@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Righteous&family=Rowdies:wght@300;400;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +58,7 @@ body {
     width: 1280px;
     height: 562px;
     border-radius: 20px;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 60px auto;
     display: block;
 }
 .hero {
@@ -90,4 +91,179 @@ h1 {
     font-family: 'Poltawski Nowy', sans-serif;
     font-size: 20px;
     max-width: 500px;
+}
+
+.search-input {
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #c6c6c647;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.search-input::placeholder {
+    color: #ffffff;
+    opacity: 1;;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto 60px auto;
+    width: 1130px;
+}
+
+.bold-subtitle {
+    font-weight: 700;
+}
+
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-10%);
+    display: flex;
+    align-items: center;
+}
+
+.display-trending-playlist {
+    margin: 0 auto 0px auto;
+    width: 1280px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.song-display {
+    width: 170px;
+    height: 170px;
+}
+
+.playlist-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.playlist-title {
+    font-size: 20px;
+}
+
+.paragraph {
+    font-size: 15px;
+}
+
+.playlist-item {
+    border-radius: 12px;
+    padding: 16px;
+    width: 190px;
+}
+
+.half-trans {
+    color: #ffffff77;
+}
+
+.display-banner-music {
+    margin: 0 auto 0px auto;
+    width: 1280px;
+}
+
+.banner-music {
+    position: relative;
+    background: linear-gradient(to left, #67AEFF, #ffffff);
+    width: 1280;
+    height: 462px;
+    border-radius: 20px; 
+    overflow: visible;
+}
+
+.border-gradient {
+    background: linear-gradient(to right, #67AEFF, #ffffff);
+    padding: 4px; 
+    border-radius: 20px; 
+    margin: 40px auto;
+}
+
+.main-img-banner {
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    filter: drop-shadow(10px 1px 5px #00000048);
+    z-index: 1;
+    position: relative;
+    display: block;
+    object-fit: cover;
+}
+
+.vinyl-subimg {
+    position: absolute;
+    width: 460px;
+    left: 230px;
+    bottom: 0;
+    z-index: 0;
+}
+
+.banner-info {
+    position: absolute;
+    align-items: end;
+    width: 450px;
+    top: 20px;
+    right: 30px;
+    color: #ffffff;
+}
+
+.tag {
+    border: 2px solid #ffffff;
+    width:fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.182);
+}
+
+.tag-list {
+    margin: 10px 0px;
+    display: flex;
+ 
+}
+
+.play-music-banner {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.182);
+    
+}
+
+.play-music-banner i {
+    font-size: 36px;
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.182);
+}
+
+.banner-paragraph {
+    margin-top: 20px;
 }
