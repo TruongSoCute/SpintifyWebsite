@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Righteous&family=Rowdies:wght@300;400;700&display=swap');
+
+
 body.night-mode {
     background: #121212;
     color: #fff;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Crimson Text', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -36,6 +39,7 @@ body.night-mode {
 }
 
 .web-name {
+    font-family: 'Righteous', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -43,6 +47,7 @@ body.night-mode {
 }
 
 .title {
+    font-family: 'Poltawski Nowy', sans-serif;
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
