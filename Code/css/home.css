@@ -23,8 +23,9 @@ body {
 .nav-buttons button:first-child {
     margin-right: 10px;
 }
-#logo-image {
+.logo-image {
     width: 32px;
+    
 }
 
 .logo-display-text {
@@ -266,4 +267,91 @@ h3 {
 
 .banner-paragraph {
     margin-top: 20px;
+}
+
+.sign-up-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+    margin: 100px auto 100px auto;
+}
+
+.big-btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 8px 20px 8px 20px;
+    font-weight: 800;
+
+}
+
+.link-text {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #000000;
+    height: 250px;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    height: 30px;
+}
+
+.footer-brand img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.footer-info dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;    
+    text-decoration: none;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.footer-info dt {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.circle-border {
+    border-radius: 50%;
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    color: #000000;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
 }
