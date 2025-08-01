@@ -68,3 +68,23 @@ ul {
     font-style: italic;
     color: rgba(0, 0, 0, 0.722);
 }
+
+
+.small-subtitle {
+    font-size: 20px;
+    color: #282828;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;;
+    padding-left: 25px;
+}
+
+svg {
+    width: 32px;
+    margin-right: 5px;
+}
+
+.icon-subtile {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
