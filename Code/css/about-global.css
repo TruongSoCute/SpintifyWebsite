@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.user-img-display {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 40px;
+}
+
+.main-content {   
+    width: 800px;
+    margin: 100px auto;
+}
+
+li {
+    margin-left: 10px;
+}
+
+body {
+    background-color: white;
+}
+
+.subtitle {
+    font-family: 'Kanit', sans-serif;
+    color: #282828;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: #282828;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.paragraph {
+    color: #282828;
+    padding-top: 5px;
+    padding-left: 35px;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.bigger-sub {
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #282828;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+hr {
+    margin: 10px 0 10px 0;
+}
+
+ul {
+    padding-left: 45px;
+    color: #282828;
+}
+
+.italic {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.722);
+}
