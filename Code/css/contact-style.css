@@ -1,0 +1,25 @@
+.member-img-display {
+    width: 350px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.display-member {
+    color: #ffffff;
+    font-style: bold;
+    display: flex;
+    width: 850px;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+
+.member-field {
+    background-color: #1DB954;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.member-info {
+    padding-left: 15px;
+}
