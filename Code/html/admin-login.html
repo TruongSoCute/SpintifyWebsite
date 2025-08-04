@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập Admin - Spintify</title>
+    <link rel="stylesheet" href="../../Code/css/login.css">
+    <link rel="icon" type="image/x-icon" href="../../datas/images/icons/Logo.ico">
+</head>
+<body class="night-mode">
+    <div class="container">
+        <div class="box-login">
+            <div class="logo-img">
+                <img src="../../datas/images/logo/Logo.png" alt="Spintify" class="logo-spintify">
+                <span class="web-name">SPINIFY.</span>
+            </div>
+            <h2 class="title">Đăng nhập Admin</h2>
+            <form id="adminLoginForm" class="form-login">
+                <div class="form-group">
+                    <label for="adminUser">Tài khoản</label>
+                    <input type="text" id="adminUser" class="input-data" placeholder="Tài khoản admin" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminPass">Mật khẩu</label>
+                    <input type="password" id="adminPass" class="input-data" placeholder="Mật khẩu" required>
+                </div>
+                <button type="submit" class="login-btn">Đăng nhập</button>
+            </form>
+            <div class="back-home">
+                <a href="home.html">&larr; Quay lại trang chủ</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('adminLoginForm').onsubmit = function(e) {
+            e.preventDefault();
+            if (adminUser.value === 'admin' && adminPass.value === '123456') {
+                localStorage.setItem('isAdmin', '1');
+                window.location.href = 'admin.html';
+            } else {
+                alert('Sai tài khoản hoặc mật khẩu!');
+            }
+        }
+    </script>
+</body>
+</html>

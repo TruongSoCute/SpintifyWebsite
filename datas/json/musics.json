@@ -1,0 +1,45 @@
+[{
+    "id": 0,
+    "title": "Đom đóm",
+    "artist": "Jack (J97)",
+    "album": "Đom đóm",
+    "duration": 240,
+    "cover": "../images/cover/Dom_dom.jpg",
+    "url": "../audio/Dom_dom.mp3",
+    "genre": "Cải lương",
+    "releaseDate": "2022-07-01",
+    "stats": {
+        "plays": 1500000,
+        "likes": 120000,
+        "shares": 30000,
+        "favorites": 50000,
+        "comments": 2000,
+        "playsToday": 5000,
+        "playsThisWeek": 35000,
+        "playsThisMonth": 150000,
+        "playsThisYear": 1500000
+    },
+    "lyrics": null
+}, {
+    "id": 1,
+    "title": "Hãy Trao Cho Anh",
+    "artist": "Sơn Tùng M-TP ft. Snoop Dogg",
+    "album": "Chạy Ngay Đi",
+    "duration": 210,
+    "cover": "../images/cover/Hay_Trao_Cho_Anh.jpg",
+    "url": "../audio/Hay_Trao_Cho_Anh.mp3",
+    "genre": "Pop",
+    "releaseDate": "2019-06-28",
+    "stats": {
+        "plays": 2000000,
+        "likes": 250000,
+        "shares": 50000,
+        "favorites": 80000,
+        "comments": 5000,
+        "playsToday": 7000,
+        "playsThisWeek": 50000,
+        "playsThisMonth": 200000,
+        "playsThisYear": 2000000
+    },
+    "lyrics": null
+}]

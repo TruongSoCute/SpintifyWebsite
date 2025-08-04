@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Quản Lý Nhạc - Spintify</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="icon" type="image/x-icon" href="../../datas/images/icons/Logo.ico">
+</head>
+<body class="admode">
+    <script>
+        if (localStorage.getItem('isAdmin') !== '1') {
+            window.location.href = 'admin-login.html';
+        }
+        function logoutAdmin() {
+            localStorage.removeItem('isAdmin');
+            window.location.href = 'admin-login.html';
+        }
+    </script>
+    <div class="adwrap">
+        <aside class="adside">
+            <div class="adme">
+                <img src="https://www.shutterstock.com/image-vector/duck-head-vector-illustration-design-600nw-2399558539.jpg" class="adava" alt="Admin">
+                <div>
+                    <span class="adname">Admin</span>
+                    <span class="adstatus onl">● Online</span>
+                </div>
+            </div>
+            <div class="admenutitle">MENU admin</div>
+            <nav class="admenu">
+                <a href="#" class="aditem active" id="btnMusic"><span class="msym">library_music</span> Nhạc</a>
+                <a href="#" class="aditem" id="btnUser"><span class="msym">person</span> Thành viên</a>
+                <a href="#" class="aditem" id="btnUpload"><span class="msym">upload</span> Uploads</a>
+                <a href="#" class="aditem"><span class="msym">settings</span> Cấu hình</a>
+                <a href="#" class="aditem" onclick="logoutAdmin()"><span class="msym">logout</span> Đăng xuất</a>
+            </nav>
+        </aside>
+        <main class="admain">
+            <header class="adhead">
+                <div class="adheadtitle">
+                    <h1 id="adTitle">Quản lý nhạc</h1>
+                    <span class="adheaddesc" id="adDesc">Chỉnh sửa, đăng tải, thêm, xoá nhạc cho hệ thống Spinify.</span>
+                </div>
+                <div id="adBtns">
+                    <button class="big-btn" id="addMusicBtn">Thêm nhạc mới</button>
+                    <button class="big-btn" id="uploadBtn" style="display:none;">Upload nhạc</button>
+                </div>
+            </header>
+            <section class="adcontent">
+                <div id="musicList" class="adtable"></div>
+                <div id="userList" class="adtable" style="display:none;"></div>
+                <div id="uploadList" class="adtable" style="display:none;"></div>
+            </section>
+        </main>
+    </div>
+    <div id="musicModal" class="modal" style="display:none;">
+        <div class="modal-content modal-small">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 id="modalTitle">Thêm/Sửa Nhạc</h2>
+            <form id="musicForm">
+                <input type="hidden" id="musicId">
+                <div class="row"><label>Tiêu đề</label><input type="text" id="title" required></div>
+                <div class="row"><label>Nghệ sĩ</label><input type="text" id="artist" required></div>
+                <div class="row"><label>Album</label><input type="text" id="album"></div>
+                <div class="row"><label>Thời lượng</label><input type="number" id="duration" min="0"></div>
+                <div class="row"><label>Thể loại</label><input type="text" id="genre"></div>
+                <div class="row"><label>Ngày phát hành</label><input type="date" id="releaseDate"></div>
+                <div class="row"><label>URL nhạc</label><input type="text" id="url"></div>
+                <div class="row"><label>Ảnh bìa</label><input type="text" id="cover"></div>
+                <button type="submit" class="big-btn">Lưu</button>
+            </form>
+        </div>
+    </div>
+    <div id="uploadModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closeUpload">&times;</span>
+            <h2>Upload nhạc</h2>
+            <form id="uploadForm">
+                <label>File nhạc (.mp3)</label>
+                <input type="file" id="fileMp3" accept=".mp3" required>
+                <label>Tên người upload</label>
+                <input type="text" id="uploadBy" required>
+                <button type="submit" class="big-btn">Upload</button>
+            </form>
+        </div>
+    </div>
+    <div id="delModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closeDel">&times;</span>
+            <h2>Xác nhận xoá</h2>
+            <p>Bạn có chắc muốn xoá nhạc này?</p>
+            <button class="big-btn" id="confirmDelBtn">Xoá</button>
+        </div>
+    </div>
+    <script src="../js/admin.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</body>
+</html>
