@@ -1,0 +1,198 @@
+body.admode, body.admin-login-mode {
+    background: #fff;
+    color: #222;
+}
+.adwrap {
+    display: flex;
+    min-height: 100vh;
+    background: #f6f6f6;
+}
+.adside {
+    width: 240px;
+    background: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 2px 0 8px #0002;
+}
+.adme {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 20px 12px 20px;
+    border-bottom: 1px solid #333;
+}
+.adava {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.adname {
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+}
+.adstatus {
+    font-size: 0.9em;
+    color: #4caf50;
+    margin-left: 2px;
+}
+.adstatus.onl {
+    color: #4caf50;
+}
+.admenutitle {
+    font-size: 0.95em;
+    font-weight: bold;
+    padding: 16px 20px 8px 20px;
+    color: #bbb;
+    letter-spacing: 1px;
+}
+.admenu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 0 16px 0;
+}
+.aditem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border-left: 4px solid transparent;
+    transition: background 0.2s, border-color 0.2s;
+}
+.aditem.active,
+.aditem:hover {
+    background: #333;
+    border-left: 4px solid #4caf50;
+    color: #4caf50;
+}
+.msym {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: normal;
+}
+.admain {
+    flex: 1;
+    padding: 0;
+    background: #f6f6f6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.adhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 32px 40px 16px 40px;
+    border-bottom: 1px solid #eee;
+}
+.adheadtitle h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #222;
+}
+.adheaddesc {
+    font-size: 1em;
+    color: #666;
+}
+.adcontent {
+    padding: 32px 40px;
+}
+.adtable {
+    margin-top: 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 24px;
+}
+.adtable table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+.adtable th, .adtable td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+.adtable th {
+    background: #222;
+    color: #fff;
+}
+.adtable tr:nth-child(even) {
+    background: #f9f9f9;
+}
+.big-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+.big-btn:hover {
+    background: #444;
+}
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #0007;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.modal-content {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    min-width: 350px;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 12px; right: 16px;
+    font-size: 28px;
+    cursor: pointer;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 16px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+label {
+    font-weight: bold;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.row label {
+    min-width: 90px;
+    font-weight: 500;
+    font-size: 0.98em;
+    margin-bottom: 0;
+}
+.row input {
+    flex: 1;
+    margin: 0;
+}
+.modal-small {
+    max-width: 350px;
+    padding: 20px;
+}
