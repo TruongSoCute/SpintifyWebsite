@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .accordion {
+            padding: 20px;
+        }
+
+        .accordion-item {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .accordion-header {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .accordion-header:hover {
+            background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+        }
+
+        .accordion-header.active {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+        }
+
+        .accordion-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: #fafafa;
+        }
+
+        .accordion-content.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+
+        .accordion-content p {
+            line-height: 1.6;
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+
+        .accordion-content ul {
+            padding-left: 20px;
+            color: #4b5563;
+        }
+
+        .accordion-content li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        /* Hiệu ứng fade in cho nội dung */
+        .accordion-content .content-inner {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease 0.1s;
+        }
+
+        .accordion-content.active .content-inner {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .accordion {
+                padding: 15px;
+            }
+            
+            .accordion-header {
+                padding: 15px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Accordion Demo</h1>
+            <p>Click vào các tiêu đề để xem nội dung</p>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>🚀 Accordion là gì?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>Accordion là một component UI cho phép người dùng mở rộng và thu gọn các phần nội dung. Nó giúp tiết kiệm không gian trên trang web và tổ chức thông tin một cách gọn gàng.</p>
+                        <p><strong>Ưu điểm của accordion:</strong></p>
+                        <ul>
+                            <li>Tiết kiệm không gian hiển thị</li>
+                            <li>Tổ chức nội dung có cấu trúc</li>
+                            <li>Cải thiện trải nghiệm người dùng</li>
+                            <li>Dễ dàng tùy chỉnh và styling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>💻 Cách tạo Accordion với HTML</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>Để tạo accordion, bạn cần cấu trúc HTML cơ bản gồm:</p>
+                        <ul>
+                            <li><strong>Container:</strong> Div chứa toàn bộ accordion</li>
+                            <li><strong>Item:</strong> Mỗi phần tử accordion</li>
+                            <li><strong>Header:</strong> Tiêu đề có thể click</li>
+                            <li><strong>Content:</strong> Nội dung có thể ẩn/hiện</li>
+                        </ul>
+                        <p>Sử dụng semantic HTML với các thẻ button và div để đảm bảo accessibility tốt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>🎨 Styling với CSS</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>CSS đóng vai trò quan trọng trong việc tạo hiệu ứng mượt mà cho accordion:</p>
+                        <ul>
+                            <li><strong>Transition:</strong> Tạo hiệu ứng chuyển đổi mượt</li>
+                            <li><strong>Max-height:</strong> Điều khiển việc mở/đóng nội dung</li>
+                            <li><strong>Transform:</strong> Xoay icon và hiệu ứng di chuyển</li>
+                            <li><strong>Hover effects:</strong> Cải thiện tương tác người dùng</li>
+                        </ul>
+                        <p>Sử dụng flexbox để căn chỉnh header và gradient để tạo màu sắc đẹp mắt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>⚡ JavaScript và Tương tác</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>JavaScript giúp accordion hoạt động tương tác:</p>
+                        <ul>
+                            <li>Lắng nghe sự kiện click trên header</li>
+                            <li>Toggle class 'active' để mở/đóng</li>
+                            <li>Có thể tạo chế độ chỉ mở một item</li>
+                            <li>Smooth scrolling và animation timing</li>
+                        </ul>
+                        <p>Code JavaScript đơn giản nhưng hiệu quả, dễ dàng tùy chỉnh theo nhu cầu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>📱 Responsive Design</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>Accordion cần được thiết kế responsive để hoạt động tốt trên mọi thiết bị:</p>
+                        <ul>
+                            <li>Media queries cho mobile và tablet</li>
+                            <li>Font size và padding linh hoạt</li>
+                            <li>Touch-friendly button size</li>
+                            <li>Smooth animation trên mobile</li>
+                        </ul>
+                        <p>Sử dụng viewport units và flexible layouts để đảm bảo hiển thị tốt trên tất cả kích thước màn hình.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript để điều khiển accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const accordionItem = this.parentElement;
+                    const accordionContent = accordionItem.querySelector('.accordion-content');
+                    const isActive = accordionContent.classList.contains('active');
+                    
+                    // Đóng tất cả accordion khác (optional - bỏ comment nếu muốn chỉ mở 1 item)
+                    // accordionHeaders.forEach(otherHeader => {
+                    //     if (otherHeader !== this) {
+                    //         otherHeader.classList.remove('active');
+                    //         otherHeader.parentElement.querySelector('.accordion-content').classList.remove('active');
+                    //     }
+                    // });
+                    
+                    // Toggle accordion hiện tại
+                    if (isActive) {
+                        this.classList.remove('active');
+                        accordionContent.classList.remove('active');
+                    } else {
+                        this.classList.add('active');
+                        accordionContent.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

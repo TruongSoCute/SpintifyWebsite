@@ -6,15 +6,13 @@
     <script src="https://kit.fontawesome.com/9a25051d78.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/home.css">
     <link href="../css/about-global.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/contact-style.css">
     <link rel="icon" type="image/x-icon" href="../../datas/images/icons/Logo.ico">
-
     <title>Spinify</title>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">
+            <div class="logo" onclick="window.location.href='home.html'">
                 <img src="../../datas/images/logo/Logo.png" alt="logo brand" class="logo-image">
                 <p class="logo-display-text">SPINIFY.</p>
             </div>
@@ -23,105 +21,184 @@
             </div>
         </div>
     </header>
+    
     <div class="main-content">
-        <h3>Điều Khoản Sử Dụng</h3>
+        <h3>ĐIỀU KHOẢN SỬ DỤNG</h3>
         <p class="subtitle">
             Spinify - Nền Tảng Phát Nhạc Trực Tuyến Miễn Phí
         </p>
         <p class="paragraph">Chào mừng bạn đến với Spinify! Bằng việc truy cập và sử dụng website này, bạn đồng ý tuân thủ các điều khoản và điều kiện được quy định dưới đây.</p>
+        
         <hr>
-        <p class="subtitle">1. Điều Khoản Chung</p>
-        <p class="paragraph">Spinify là nền tảng phát nhạc trực tuyến miễn phí được phát triển bởi đội ngũ sinh viên. Dịch vụ được cung cấp "như hiện tại" và có thể thay đổi mà không cần thông báo trước.</p>
-        <ul>
-            <li>Bạn phải đủ 13 tuổi trở lên để sử dụng dịch vụ</li>
-            <li>Thông tin đăng ký phải chính xác và đầy đủ</li>
-            <li>Bạn chịu trách nhiệm bảo mật tài khoản của mình</li>
-            <li>Mỗi người chỉ được tạo một tài khoản</li>
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="general-terms">
+                <label for="general-terms">
+                    <p class="subtitle">1. Điều Khoản Chung</p>
+                </label>
+                <div class="content">
+                    <p class="paragraph">Spinify là nền tảng phát nhạc trực tuyến miễn phí được phát triển bởi đội ngũ sinh viên. Dịch vụ được cung cấp "như hiện tại" và có thể thay đổi mà không cần thông báo trước.</p>
+                    <p class="paragraph">• Bạn phải đủ 13 tuổi trở lên để sử dụng dịch vụ</p>
+                    <p class="paragraph">• Thông tin đăng ký phải chính xác và đầy đủ</p>
+                    <p class="paragraph">• Bạn chịu trách nhiệm bảo mật tài khoản của mình</p>
+                    <p class="paragraph">• Mỗi người chỉ được tạo một tài khoản</p>
+                </div>
+            </li>
         </ul>
-        <hr>
-        <p class="subtitle">2. Quyền Và Nghĩa Vụ Của Người Dùng</p>
-        <p class="small-subtitle">Quyền Của Bạn</p>
-        <ul>
-            <li>Nghe nhạc miễn phí trên nền tảng</li>
-            <li>Tạo và quản lý danh sách phát cá nhân</li>
-            <li>Chia sẻ âm nhạc với bạn bè</li>
-            <li>Đánh giá và bình luận về bài hát</li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="user-rights">
+                <label for="user-rights">
+                    <p class="subtitle">2. Quyền Và Nghĩa Vụ Của Người Dùng</p>
+                </label>
+                <div class="content">
+                    <div class="content-part">
+                        <b>Quyền Của Bạn</b>
+                        <p class="paragraph">• Nghe nhạc miễn phí trên nền tảng</p>
+                        <p class="paragraph">• Tạo và quản lý danh sách phát cá nhân</p>
+                        <p class="paragraph">• Chia sẻ âm nhạc với bạn bè</p>
+                        <p class="paragraph">• Đánh giá và bình luận về bài hát</p>
+                    </div>
+                    <div class="content-part">
+                        <b>Nghĩa Vụ Của Bạn</b>
+                        <p class="paragraph">• Không được sử dụng dịch vụ cho mục đích thương mại</p>
+                        <p class="paragraph">• Không được tải xuống hoặc sao chép nội dung</p>
+                        <p class="paragraph">• Tuân thủ pháp luật và quy định về bản quyền</p>
+                        <p class="paragraph">• Không được spam hoặc quấy rối người dùng khác</p>
+                    </div>
+                    
+
+                </div>
+            </li>
         </ul>
-        <p class="small-subtitle">Nghĩa Vụ Của Bạn</p>
-        <ul>
-            <li>Không được sử dụng dịch vụ cho mục đích thương mại</li>
-            <li>Không được tải xuống hoặc sao chép nội dung</li>
-            <li>Tuân thủ pháp luật và quy định về bản quyền</li>
-            <li>Không được spam hoặc quấy rối người dùng khác</li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="copyright">
+                <label for="copyright">
+                    <p class="subtitle">3. Nội Dung Và Bản Quyền</p>
+                </label>
+                <div class="content">
+                    <p class="paragraph">Tất cả nội dung âm nhạc trên Spinify đều thuộc quyền sở hữu của các nghệ sĩ và nhà sản xuất tương ứng.</p>
+                    <p class="paragraph">• Spinify chỉ cung cấp dịch vụ streaming, không sở hữu bản quyền nhạc</p>
+                    <p class="paragraph">• Người dùng không được phép tải xuống hoặc phân phối lại nội dung</p>
+                    <p class="paragraph">• Mọi vi phạm bản quyền sẽ bị xử lý nghiêm khắc</p>
+                    <p class="paragraph">• Báo cáo vi phạm bản quyền: <a href="mailto:report@spinify.vn">report@spinify.vn</a></p>
+                </div>
+            </li>
         </ul>
-        <hr>
-        <p class="subtitle">3. Nội Dung Và Bản Quyền</p>
-        <p class="paragraph">Tất cả nội dung âm nhạc trên Spinify đều thuộc quyền sở hữu của các nghệ sĩ và nhà sản xuất tương ứng.</p>
-        <ul>
-            <li>Spinify chỉ cung cấp dịch vụ streaming, không sở hữu bản quyền nhạc</li>
-            <li>Người dùng không được phép tải xuống hoặc phân phối lại nội dung</li>
-            <li>Mọi vi phạm bản quyền sẽ bị xử lý nghiêm khắc</li>
-            <li>Báo cáo vi phạm bản quyền: <a href="mailto:report@spinify.vn">report@spinify.vn</a></li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="prohibited-behavior">
+                <label for="prohibited-behavior">
+                    <p class="subtitle">4. Hành Vi Bị Cấm</p>
+                </label>
+                <div class="content">
+                    <p class="paragraph">Các hành vi sau đây bị nghiêm cấm trên Spinify:</p>
+                    <p class="paragraph">• Sử dụng phần mềm tự động (bot) để truy cập dịch vụ</p>
+                    <p class="paragraph">• Cố gắng hack hoặc phá hoại hệ thống</p>
+                    <p class="paragraph">• Chia sẻ nội dung có bản quyền trái phép</p>
+                    <p class="paragraph">• Tạo nhiều tài khoản ảo</p>
+                    <p class="paragraph">• Spam hoặc quảng cáo không mong muốn</p>
+                    <p class="paragraph">• Sử dụng ngôn ngữ thù địch hoặc phân biệt đối xử</p>
+                </div>
+            </li>
         </ul>
-        <hr>
-        <p class="subtitle">4. Hành Vi Bị Cấm</p>
-        <p class="paragraph">Các hành vi sau đây bị nghiêm cấm trên Spinify:</p>
-        <ul>
-            <li>Sử dụng phần mềm tự động (bot) để truy cập dịch vụ</li>
-            <li>Cố gắng hack hoặc phá hoại hệ thống</li>
-            <li>Chia sẻ nội dung có bản quyền trái phép</li>
-            <li>Tạo nhiều tài khoản ảo</li>
-            <li>Spam hoặc quảng cáo không mong muốn</li>
-            <li>Sử dụng ngôn ngữ thù địch hoặc phân biệt đối xử</li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="account-policy">
+                <label for="account-policy">
+                    <p class="subtitle">5. Chính Sách Tài Khoản</p>
+                </label>
+                <div class="content">
+                    <div class="content-part">
+                        <b>Đình Chỉ Tài Khoản</b>
+                        <p class="paragraph">Spinify có quyền đình chỉ hoặc khóa tài khoản trong các trường hợp:</p>
+                        <p class="paragraph">• Vi phạm điều khoản sử dụng</p>
+                        <p class="paragraph">• Hoạt động đáng ngờ hoặc gian lận</p>
+                        <p class="paragraph">• Báo cáo từ người dùng khác về hành vi sai trái</p>
+                        <p class="paragraph">• Yêu cầu từ cơ quan pháp luật</p>
+                    </div>
+                    <div class="content-part">
+                        <b>Khôi Phục Tài Khoản</b>
+                        <p class="paragraph">Liên hệ <a href="mailto:support@spinify.vn">support@spinify.vn</a> để yêu cầu khôi phục tài khoản bị khóa.</p>
+                    </div>
+
+                    
+                 </div>
+            </li>
         </ul>
-        <hr>
-        <p class="subtitle">5. Chính Sách Tài Khoản</p>
-        <p class="small-subtitle">Đình Chỉ Tài Khoản</p>
-        <p class="paragraph">Spinify có quyền đình chỉ hoặc khóa tài khoản trong các trường hợp:</p>
-        <ul>
-            <li>Vi phạm điều khoản sử dụng</li>
-            <li>Hoạt động đáng ngờ hoặc gian lận</li>
-            <li>Báo cáo từ người dùng khác về hành vi sai trái</li>
-            <li>Yêu cầu từ cơ quan pháp luật</li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="disclaimer">
+                <label for="disclaimer">
+                    <p class="subtitle">6. Tuyên Bố Miễn Trừ Trách Nhiệm</p>
+                </label>
+                <div class="content">
+                    <p class="paragraph">Spinify không chịu trách nhiệm về:</p>
+                    <p class="paragraph">• Sự cố kỹ thuật hoặc gián đoạn dịch vụ</p>
+                    <p class="paragraph">• Mất mát dữ liệu cá nhân hoặc danh sách phát</p>
+                    <p class="paragraph">• Nội dung không phù hợp từ người dùng khác</p>
+                    <p class="paragraph">• Thiệt hại gián tiếp do sử dụng dịch vụ</p>
+                </div>
+            </li>
         </ul>
-        <p class="small-subtitle">Khôi Phục Tài Khoản</p>
-        <p class="paragraph">Liên hệ <a href="mailto:support@spinify.vn">support@spinify.vn</a> để yêu cầu khôi phục tài khoản bị khóa.</p>
-        <hr>
-        <p class="subtitle">6. Tuyên Bố Miễn Trừ Trách Nhiệm</p>
-        <p class="paragraph">Spinify không chịu trách nhiệm về:</p>
-        <ul>
-            <li>Sự cố kỹ thuật hoặc gián đoạn dịch vụ</li>
-            <li>Mất mát dữ liệu cá nhân hoặc danh sách phát</li>
-            <li>Nội dung không phù hợp từ người dùng khác</li>
-            <li>Thiệt hại gián tiếp do sử dụng dịch vụ</li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="terms-change">
+                <label for="terms-change">
+                    <p class="subtitle">7. Thay Đổi Điều Khoản</p>
+                </label>
+                <div class="content">
+                    <p class="paragraph">Spinify có quyền cập nhật các điều khoản sử dụng này bất cứ lúc nào. Người dùng sẽ được thông báo về những thay đổi quan trọng qua:</p>
+                    <p class="paragraph">• Email đã đăng ký</p>
+                    <p class="paragraph">• Thông báo trên website</p>
+                    <p class="paragraph">• Popup khi đăng nhập</p>
+                </div>
+            </li>
         </ul>
-        <hr>
-        <p class="subtitle">7. Thay Đổi Điều Khoản</p>
-        <p class="paragraph">Spinify có quyền cập nhật các điều khoản sử dụng này bất cứ lúc nào. Người dùng sẽ được thông báo về những thay đổi quan trọng qua:</p>
-        <ul>
-            <li>Email đã đăng ký</li>
-            <li>Thông báo trên website</li>
-            <li>Popup khi đăng nhập</li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="contact-support">
+                <label for="contact-support">
+                    <p class="subtitle">8. Liên Hệ & Hỗ Trợ</p>
+                </label>
+                <div class="content">
+                    <p class="paragraph">Nếu bạn có câu hỏi về các điều khoản này, vui lòng liên hệ:</p>
+                    <p class="paragraph">• <b>Email:</b> <a href="mailto:support@spinify.vn">support@spinify.vn</a></p>
+                    <p class="paragraph">• <b>Thời gian hỗ trợ:</b> Thứ 2 - Chủ Nhật (8:00 - 22:00)</p>
+                </div>
+            </li>
         </ul>
-        <hr>
-        <p class="subtitle">8. Liên Hệ & Hỗ Trợ</p>
-        <p class="paragraph">Nếu bạn có câu hỏi về các điều khoản này, vui lòng liên hệ:</p>
-        <ul>
-            <li><b>Email:</b> <a href="mailto:support@spinify.vn">support@spinify.vn</a></li>
-            <li><b>Thời gian hỗ trợ:</b> Thứ 2 - Chủ Nhật (8:00 - 22:00)</li>
+
+        <ul class="accordions">
+            <li>
+                <input type="checkbox" name="accordions" id="applicable-law">
+                <label for="applicable-law">
+                    <p class="subtitle">9. Luật Áp Dụng</p>
+                </label>
+                <div class="content">
+                    <p class="paragraph">Các điều khoản này được điều chỉnh bởi pháp luật Việt Nam. Mọi tranh chấp sẽ được giải quyết tại tòa án có thẩm quyền tại Việt Nam.</p>
+                </div>
+            </li>
         </ul>
-        <hr>
-        <p class="subtitle">9. Luật Áp Dụng</p>
-        <p class="paragraph">Các điều khoản này được điều chỉnh bởi pháp luật Việt Nam. Mọi tranh chấp sẽ được giải quyết tại tòa án có thẩm quyền tại Việt Nam.</p>
+
         <hr>
         <p class="paragraph"><b>Bằng việc tiếp tục sử dụng Spinify, bạn đồng ý với tất cả các điều khoản trên.</b></p>
         <p class="paragraph"><i>Điều khoản có hiệu lực từ ngày 01/01/2024 | Cập nhật lần cuối: 15/12/2024</i></p>
         <hr>
         <p class="paragraph"><i>© 2024 Spinify Music Platform. Phát triển bởi đội ngũ sinh viên đam mê âm nhạc và công nghệ.</i></p>
     </div>
+
     <footer>
         <div class="footer-content">
-            <div class="footer-brand">
+            <div class="footer-brand" onclick="window.location.href='home.html'">
                 <img src="../../datas/images/logo/Logo.png" class="logo-image">
                 <p class="logo-display-text">SPINIFY.</p>
             </div>
@@ -151,10 +228,8 @@
                 <span class="circle-border">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64L421.8 64C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"/></svg>
                 </span>
-               
             </div>
         </div>
-        
     </footer>
 </body>
 </html>

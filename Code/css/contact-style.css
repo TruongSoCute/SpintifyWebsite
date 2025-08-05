@@ -1,25 +1,35 @@
 .member-img-display {
-    width: 350px;
-    border: 1px solid #000000;
-    border-radius: 10px;
+    width: 100px;
+    border-radius: 5px;
 }
 
 .display-member {
-    color: #ffffff;
+    color: #282828;
     font-style: bold;
     display: flex;
-    width: 850px;
+    width: 880px;
     flex-direction: row;    
     justify-content: space-between;
+    transform: translateX(-25px);
 }
 
 .member-field {
-    background-color: #1DB954;
-    border: 2px solid #000000;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
     padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
 }
+
+
 
 .member-info {
     padding-left: 15px;
+}
+
+hr {
+    margin-top: 30px;
 }
