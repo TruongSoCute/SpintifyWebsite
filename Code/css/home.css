@@ -27,8 +27,12 @@ body {
 
 button {
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
+button:hover {
+    transform: scale(1.05);
+}
 .logo-image {
     width: 32px;
     
@@ -160,14 +164,33 @@ h3 {
 .song-display {
     width: 170px;
     height: 170px;
+    position: relative;
+    z-index: 2;
+}
+
+.sub-image-display {
+    width: 100%;
+    position: relative;
+    bottom: 175px;
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+
+.song-image-wrapper {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 5px;
 }
 
 .playlist-list {
     display: flex;
+    gap: 15px;
+    transition: all 0.8s ease;
     flex-direction: row;
-    gap: 30px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+
 }
 
 .playlist-title {
@@ -179,9 +202,25 @@ h3 {
 }
 
 .playlist-item {
+    transition: all 0.4s ease;
+    margin-right: 5px;
     border-radius: 12px;
     padding: 16px;
     width: 190px;
+}
+
+.playlist-item:hover .sub-image-display {
+    transform: translateX(50%);
+}
+
+.playlist-item:hover {
+
+    margin-right: 60px;
+}
+
+.playlist-item:hover .play-music-button {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .half-trans {
@@ -250,6 +289,28 @@ h3 {
     margin: 10px 0px;
     display: flex;
  
+}
+
+.play-music-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 5px;
+    right: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #38d56e;
+    border: none;
+    opacity: 0;
+    transform: scale(0.8) translateY(10px);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.play-music-button svg {
+    width: 30px;
+    height: 35px;
+    padding-left: 2px;
+    color: black;
 }
 
 .play-music-banner {
@@ -378,3 +439,6 @@ footer {
     fill: #000000;
 }
 
+.link-text:hover {
+    color:#18c753;
+}

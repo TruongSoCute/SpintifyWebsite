@@ -94,7 +94,7 @@ body.night-mode {
 }
 
 .forgot-password a:hover {
-    color: #fff;
+    color: #18c753;
 }
 
 .login-btn {
@@ -139,7 +139,15 @@ body.night-mode {
 }
 
 .back-home a:hover {
-    color: #fff;
+    color: #18c753;
+}
+
+.register-option a:hover {
+    color: #18c753;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
