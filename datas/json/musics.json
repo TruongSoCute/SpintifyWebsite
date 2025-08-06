@@ -1,45 +1,100 @@
-[{
-    "id": 0,
-    "title": "Đom đóm",
-    "artist": "Jack (J97)",
-    "album": "Đom đóm",
-    "duration": 240,
-    "cover": "../images/cover/Dom_dom.jpg",
-    "url": "../audio/Dom_dom.mp3",
-    "genre": "Cải lương",
-    "releaseDate": "2022-07-01",
-    "stats": {
-        "plays": 1500000,
-        "likes": 120000,
-        "shares": 30000,
-        "favorites": 50000,
-        "comments": 2000,
-        "playsToday": 5000,
-        "playsThisWeek": 35000,
-        "playsThisMonth": 150000,
-        "playsThisYear": 1500000
-    },
-    "lyrics": null
-}, {
+[
+  {
     "id": 1,
-    "title": "Hãy Trao Cho Anh",
-    "artist": "Sơn Tùng M-TP ft. Snoop Dogg",
-    "album": "Chạy Ngay Đi",
-    "duration": 210,
-    "cover": "../images/cover/Hay_Trao_Cho_Anh.jpg",
-    "url": "../audio/Hay_Trao_Cho_Anh.mp3",
-    "genre": "Pop",
-    "releaseDate": "2019-06-28",
-    "stats": {
-        "plays": 2000000,
-        "likes": 250000,
-        "shares": 50000,
-        "favorites": 80000,
-        "comments": 5000,
-        "playsToday": 7000,
-        "playsThisWeek": 50000,
-        "playsThisMonth": 200000,
-        "playsThisYear": 2000000
-    },
-    "lyrics": null
-}]
+    "title": "Cupid",
+    "artist": "FIFTY FIFTY",
+    "cover": "../../datas/images/resource/playlist1.jpg",
+    "url": "../../datas/audio/cupid.m4a",
+    "trending": true
+  },
+  {
+    "id": 2,
+    "title": "Super Shy",
+    "artist": "New Jeans",
+    "cover": "../../datas/images/resource/playlist2.jpg",
+    "url": "../../datas/audio/super_shy.mp3",
+    "trending": true
+  },
+  {
+    "id": 3,
+    "title": "Lucky Girl Syndrome",
+    "artist": "ILLIT",
+    "cover": "../../datas/images/resource/playlist3.jpg",
+    "url": "../../datas/audio/Lucky_Girl_Syndrome.mp3",
+    "trending": true
+  },
+  {
+    "id": 4,
+    "title": "Love Lee",
+    "artist": "AKMU",
+    "cover": "../../datas/images/resource/playlist4.jpg",
+    "url": "../../datas/audio/Love_Lee.mp3",
+    "trending": true
+  },
+  {
+    "id": 5,
+    "title": "Hoa Dại",
+    "artist": "Lân Nhã",
+    "cover": "../../datas/images/resource/playlist5.jpg",
+    "url": "../../datas/audio/demo.mp3",
+    "trending": true
+  },
+  {
+    "id": 6,
+    "title": "Night Dancer",
+    "artist": "imase",
+    "cover": "../../datas/images/resource/playlist6.jpg",
+    "url": "../../datas/audio/Night_Dancer.mp3",
+    "trending": true
+  },
+  {
+    "id": 7,
+    "title": "Fire Again",
+    "artist": "VALORANT",
+    "cover": "../../datas/images/resource/playlist8.jpg",
+    "url": "../../datas/audio/Fire_Again.mp3"
+  },
+  {
+    "id": 8,
+    "title": "Dù Cho",
+    "artist": "Ngọc Nguyễn",
+    "cover": "../../datas/images/resource/playlist9.jpg",
+    "url": "../../datas/audio/demo.mp3"
+  },
+  {
+    "id": 9,
+    "title": "Red Swan",
+    "artist": "HYDE, Yoshiki",
+    "cover": "../../datas/images/resource/playlist10.jpg",
+    "url": "../../datas/audio/demo.mp3"
+  },
+  {
+    "id": 10,
+    "title": "I Like You Most",
+    "artist": "Ponchet",
+    "cover": "../../datas/images/resource/playlist11.jpg",
+    "url": "../../datas/audio/demo.mp3"
+  },
+  {
+    "id": 11,
+    "title": "You Are My Crush",
+    "artist": "Quân A.P",
+    "cover": "../../datas/images/resource/playlist12.jpg",
+    "url": "../../datas/audio/demo.mp3"
+  },
+  {
+    "id": 12,
+    "title": "Pedro",
+    "artist": "Jaxomy, Agatino Romero",
+    "cover": "../../datas/images/resource/playlist7.jpg",
+    "url": "../../datas/audio/demo.mp3"
+  },
+  {
+    "id": 13,
+    "title": "SEKAI NO OWARI",
+    "artist": "The Peak",
+    "cover": "../../datas/images/resource/banner-music.jpg",
+    "url": "../../datas/audio/demo.mp3",
+    "featured": true
+  }
+]
