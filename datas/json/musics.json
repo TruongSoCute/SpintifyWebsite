@@ -36,7 +36,7 @@
     "title": "Hoa Dại",
     "artist": "Lân Nhã",
     "cover": "../../datas/images/resource/playlist5.jpg",
-    "url": "../../datas/audio/demo.mp3",
+    "url": "../../datas/audio/hoa-dai.mp3",
     "trending": true
   },
   {
@@ -59,42 +59,42 @@
     "title": "Dù Cho",
     "artist": "Ngọc Nguyễn",
     "cover": "../../datas/images/resource/playlist9.jpg",
-    "url": "../../datas/audio/demo.mp3"
+    "url": "../../datas/audio/du-cho.mp3"
   },
   {
     "id": 9,
     "title": "Red Swan",
     "artist": "HYDE, Yoshiki",
     "cover": "../../datas/images/resource/playlist10.jpg",
-    "url": "../../datas/audio/demo.mp3"
+    "url": "../../datas/audio/red-swan.mp3"
   },
   {
     "id": 10,
     "title": "I Like You Most",
     "artist": "Ponchet",
     "cover": "../../datas/images/resource/playlist11.jpg",
-    "url": "../../datas/audio/demo.mp3"
+    "url": "../../datas/audio/ponchet.mp3"
   },
   {
     "id": 11,
     "title": "You Are My Crush",
     "artist": "Quân A.P",
     "cover": "../../datas/images/resource/playlist12.jpg",
-    "url": "../../datas/audio/demo.mp3"
+    "url": "../../datas/audio/crush.mp3"
   },
   {
     "id": 12,
     "title": "Pedro",
     "artist": "Jaxomy, Agatino Romero",
     "cover": "../../datas/images/resource/playlist7.jpg",
-    "url": "../../datas/audio/demo.mp3"
+    "url": "../../datas/audio/pedro.mp3"
   },
   {
     "id": 13,
     "title": "SEKAI NO OWARI",
     "artist": "The Peak",
     "cover": "../../datas/images/resource/banner-music.jpg",
-    "url": "../../datas/audio/demo.mp3",
+    "url": "../../datas/audio/sekai-no-owari.mp3",
     "featured": true
   }
 ]
