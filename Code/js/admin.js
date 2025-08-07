@@ -1,8 +1,8 @@
 let musics = [];
 let uploads = [];
 let users = [
-    { id: 1, name: "Admin", email: "admin@spintify.com", role: "Quản trị" },
-    { id: 2, name: "Pham Van Dien", email: "dien@spintify.com", role: "Thành viên" }
+    { id: 1, name: "Ngo Quang Truong", email: "truongngo@spintify.com", role: "Quản trị" },
+    { id: 2, name: "Pham Van Dien", email: "dienpham@spintify.com", role: "Quản trị" }
 ];
 let delId = null;
 
@@ -18,6 +18,7 @@ const modalTitle = $('modalTitle');
 const btnMusic = $('btnMusic');
 const btnUser = $('btnUser');
 const btnUpload = $('btnUpload');
+const btnConfig = $('btnConfig');
 const adTitle = $('adTitle');
 const adDesc = $('adDesc');
 const adBtns = $('adBtns');
@@ -28,6 +29,11 @@ const uploadForm = $('uploadForm');
 const delModal = $('delModal');
 const closeDel = $('closeDel');
 const confirmDelBtn = $('confirmDelBtn');
+const configPanel = $('configPanel');
+const configForm = $('configForm');
+const isPremium = $('isPremium');
+const musicQuality = $('musicQuality');
+const defaultRole = $('defaultRole');
 
 const show = (el) => el.style.display = 'flex';
 const hide = (el) => el.style.display = 'none';
@@ -64,8 +70,20 @@ btnUpload.onclick = () => {
     setActive(btnUpload);
     renderUploadList();
 };
+
+btnConfig.onclick = () => {
+    adTitle.textContent = "Cấu hình hệ thống";
+    adDesc.textContent = "Cấu hình các tuỳ chọn hệ thống như Premium, Free, chất lượng nhạc.";
+    musicList.style.display = "none";
+    userList.style.display = "none";
+    uploadList.style.display = "none";
+    addMusicBtn.style.display = "none";
+    uploadBtn.style.display = "none";
+    setActive(btnConfig);
+}
+
 function setActive(btn) {
-    [btnMusic, btnUser, btnUpload].forEach(b => b.classList.remove("active"));
+    [btnMusic, btnUser, btnUpload, btnConfig].forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 }
 
@@ -84,13 +102,11 @@ function renderMusicList() {
     musicList.className = "adtable";
     musicList.innerHTML = renderTable(
         musics,
-        ["ID", "Tiêu đề", "Nghệ sĩ", "Album", "Thể loại", "Ngày phát hành", "Thao tác"],
+        ["ID", "Tiêu đề", "Nghệ sĩ", "Năm phát hành", "Thao tác"],
         m => `<tr>
             <td>${m.id}</td>
             <td>${m.title}</td>
             <td>${m.artist}</td>
-            <td>${m.album}</td>
-            <td>${m.genre}</td>
             <td>${m.releaseDate}</td>
             <td>
                 <button onclick="editMusic(${m.id})">Sửa</button>
@@ -186,9 +202,6 @@ musicForm.onsubmit = function(e) {
         id,
         title: musicForm.title.value,
         artist: musicForm.artist.value,
-        album: musicForm.album.value,
-        duration: Number(musicForm.duration.value),
-        genre: musicForm.genre.value,
         releaseDate: musicForm.releaseDate.value,
         url: musicForm.url.value,
         cover: musicForm.cover.value,

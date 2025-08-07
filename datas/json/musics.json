@@ -5,7 +5,8 @@
     "artist": "FIFTY FIFTY",
     "cover": "../../datas/images/resource/playlist1.jpg",
     "url": "../../datas/audio/cupid.m4a",
-    "trending": true
+    "trending": true,
+    "releaseDate": "2023"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "artist": "New Jeans",
     "cover": "../../datas/images/resource/playlist2.jpg",
     "url": "../../datas/audio/super_shy.mp3",
-    "trending": true
+    "trending": true,
+    "releaseDate": "2023"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "artist": "ILLIT",
     "cover": "../../datas/images/resource/playlist3.jpg",
     "url": "../../datas/audio/Lucky_Girl_Syndrome.mp3",
-    "trending": true
+    "trending": true,
+    "releaseDate": "2023"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "artist": "AKMU",
     "cover": "../../datas/images/resource/playlist4.jpg",
     "url": "../../datas/audio/Love_Lee.mp3",
-    "trending": true
+    "trending": true,
+    "releaseDate": "2023"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "artist": "Lân Nhã",
     "cover": "../../datas/images/resource/playlist5.jpg",
     "url": "../../datas/audio/hoa-dai.mp3",
-    "trending": true
+    "trending": true,
+    "releaseDate": "2023"
   },
   {
     "id": 6,
@@ -45,49 +50,56 @@
     "artist": "imase",
     "cover": "../../datas/images/resource/playlist6.jpg",
     "url": "../../datas/audio/Night_Dancer.mp3",
-    "trending": true
+    "trending": true,
+    "releaseDate": "2023"
   },
   {
     "id": 7,
     "title": "Fire Again",
     "artist": "VALORANT",
     "cover": "../../datas/images/resource/playlist8.jpg",
-    "url": "../../datas/audio/Fire_Again.mp3"
+    "url": "../../datas/audio/Fire_Again.mp3",
+    "releaseDate": "2023"
   },
   {
     "id": 8,
     "title": "Dù Cho",
     "artist": "Ngọc Nguyễn",
     "cover": "../../datas/images/resource/playlist9.jpg",
-    "url": "../../datas/audio/du-cho.mp3"
+    "url": "../../datas/audio/du-cho.mp3",
+    "releaseDate": "2023"
   },
   {
     "id": 9,
     "title": "Red Swan",
     "artist": "HYDE, Yoshiki",
     "cover": "../../datas/images/resource/playlist10.jpg",
-    "url": "../../datas/audio/red-swan.mp3"
+    "url": "../../datas/audio/red-swan.mp3",
+    "releaseDate": "2023"
   },
   {
     "id": 10,
     "title": "I Like You Most",
     "artist": "Ponchet",
     "cover": "../../datas/images/resource/playlist11.jpg",
-    "url": "../../datas/audio/ponchet.mp3"
+    "url": "../../datas/audio/ponchet.mp3",
+    "releaseDate": "2023"
   },
   {
     "id": 11,
     "title": "You Are My Crush",
     "artist": "Quân A.P",
     "cover": "../../datas/images/resource/playlist12.jpg",
-    "url": "../../datas/audio/crush.mp3"
+    "url": "../../datas/audio/crush.mp3",
+    "releaseDate": "2023"
   },
   {
     "id": 12,
     "title": "Pedro",
     "artist": "Jaxomy, Agatino Romero",
     "cover": "../../datas/images/resource/playlist7.jpg",
-    "url": "../../datas/audio/pedro.mp3"
+    "url": "../../datas/audio/pedro.mp3",
+    "releaseDate": "2023"
   },
   {
     "id": 13,
@@ -95,6 +107,7 @@
     "artist": "The Peak",
     "cover": "../../datas/images/resource/banner-music.jpg",
     "url": "../../datas/audio/sekai-no-owari.mp3",
-    "featured": true
+    "featured": true,
+    "releaseDate": "2023"
   }
 ]

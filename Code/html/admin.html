@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="icon" type="image/x-icon" href="../../datas/images/icons/Logo.ico">
+    <script src="../js/admin.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body class="admode">
     <script>
@@ -32,7 +34,7 @@
                 <a href="#" class="aditem active" id="btnMusic"><span class="msym">library_music</span> Nhạc</a>
                 <a href="#" class="aditem" id="btnUser"><span class="msym">person</span> Thành viên</a>
                 <a href="#" class="aditem" id="btnUpload"><span class="msym">upload</span> Uploads</a>
-                <a href="#" class="aditem"><span class="msym">settings</span> Cấu hình</a>
+                <a href="#" class="aditem" id="btnConfig"><span class="msym">settings</span> Cấu hình</a>
                 <a href="#" class="aditem" onclick="logoutAdmin()"><span class="msym">logout</span> Đăng xuất</a>
             </nav>
         </aside>
@@ -62,9 +64,6 @@
                 <input type="hidden" id="musicId">
                 <div class="row"><label>Tiêu đề</label><input type="text" id="title" required></div>
                 <div class="row"><label>Nghệ sĩ</label><input type="text" id="artist" required></div>
-                <div class="row"><label>Album</label><input type="text" id="album"></div>
-                <div class="row"><label>Thời lượng</label><input type="number" id="duration" min="0"></div>
-                <div class="row"><label>Thể loại</label><input type="text" id="genre"></div>
                 <div class="row"><label>Ngày phát hành</label><input type="date" id="releaseDate"></div>
                 <div class="row"><label>URL nhạc</label><input type="text" id="url"></div>
                 <div class="row"><label>Ảnh bìa</label><input type="text" id="cover"></div>
@@ -93,7 +92,5 @@
             <button class="big-btn" id="confirmDelBtn">Xoá</button>
         </div>
     </div>
-    <script src="../js/admin.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </body>
 </html>
