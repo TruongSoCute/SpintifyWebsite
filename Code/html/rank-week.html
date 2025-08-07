@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Discover - Spintify</title>
+    <title>Bảng xếp hạng tuần - Spintify</title>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/discover.css">
     <link rel="icon" type="image/x-icon" href="../../datas/images/icons/Logo.ico">
     <script src="../js/main.js" defer></script>
-    <script src="../js/discover.js" defer></script>
+    <script src="../js/rank-week.js" defer></script>
+    <link rel="stylesheet" href="../css/rank-week.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
@@ -52,27 +53,10 @@
 
         <div class="main-content">
             <main>
-                <div class="discover-section-title" id="top-week">
-                    Danh sách nhạc nổi bật
-                    <button class="show-all-btn" data-section="top">Hiện tất cả</button>
+                <div class="discover-section-title" id="weekly-chart">
+                    Bảng xếp hạng tuần (Lượt nghe)
                 </div>
-                <div class="music-list" id="top-music-list">
-                    <div class="loading-indicator">Đang tải...</div>
-                </div>
-
-                <div class="discover-section-title" id="top-100">
-                    Album nổi tiếng
-                    <button class="show-all-btn" data-section="album">Hiện tất cả</button>
-                </div>
-                <div class="music-list" id="album-music-list">
-                    <div class="loading-indicator">Đang tải...</div>
-                </div>
-
-                <div class="discover-section-title">
-                    Nghệ sĩ phổ biến
-                    <button class="show-all-btn" data-section="artist">Hiện tất cả</button>
-                </div>
-                <div class="music-list" id="artist-music-list">
+                <div class="music-list" id="weekly-chart-music-list">
                     <div class="loading-indicator">Đang tải...</div>
                 </div>
             </main>

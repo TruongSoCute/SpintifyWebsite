@@ -6,7 +6,11 @@
     "cover": "../../datas/images/resource/playlist1.jpg",
     "url": "../../datas/audio/cupid.m4a",
     "trending": true,
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 82350,
+    "monthlyPlays": 312400,
+    "totalPlays": 1256900,
+    "likes": 98200
   },
   {
     "id": 2,
@@ -15,7 +19,11 @@
     "cover": "../../datas/images/resource/playlist2.jpg",
     "url": "../../datas/audio/super_shy.mp3",
     "trending": true,
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 96780,
+    "monthlyPlays": 398600,
+    "totalPlays": 1453200,
+    "likes": 104500
   },
   {
     "id": 3,
@@ -24,7 +32,11 @@
     "cover": "../../datas/images/resource/playlist3.jpg",
     "url": "../../datas/audio/Lucky_Girl_Syndrome.mp3",
     "trending": true,
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 75210,
+    "monthlyPlays": 275300,
+    "totalPlays": 987000,
+    "likes": 87600
   },
   {
     "id": 4,
@@ -33,7 +45,11 @@
     "cover": "../../datas/images/resource/playlist4.jpg",
     "url": "../../datas/audio/Love_Lee.mp3",
     "trending": true,
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 68900,
+    "monthlyPlays": 258700,
+    "totalPlays": 880000,
+    "likes": 81200
   },
   {
     "id": 5,
@@ -42,7 +58,11 @@
     "cover": "../../datas/images/resource/playlist5.jpg",
     "url": "../../datas/audio/hoa-dai.mp3",
     "trending": true,
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 32000,
+    "monthlyPlays": 119500,
+    "totalPlays": 560000,
+    "likes": 45200
   },
   {
     "id": 6,
@@ -51,7 +71,11 @@
     "cover": "../../datas/images/resource/playlist6.jpg",
     "url": "../../datas/audio/Night_Dancer.mp3",
     "trending": true,
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 70200,
+    "monthlyPlays": 266800,
+    "totalPlays": 910500,
+    "likes": 83400
   },
   {
     "id": 7,
@@ -59,7 +83,11 @@
     "artist": "VALORANT",
     "cover": "../../datas/images/resource/playlist8.jpg",
     "url": "../../datas/audio/Fire_Again.mp3",
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 44120,
+    "monthlyPlays": 165300,
+    "totalPlays": 720100,
+    "likes": 67500
   },
   {
     "id": 8,
@@ -67,7 +95,11 @@
     "artist": "Ngọc Nguyễn",
     "cover": "../../datas/images/resource/playlist9.jpg",
     "url": "../../datas/audio/du-cho.mp3",
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 30850,
+    "monthlyPlays": 120400,
+    "totalPlays": 530000,
+    "likes": 42300
   },
   {
     "id": 9,
@@ -75,7 +107,11 @@
     "artist": "HYDE, Yoshiki",
     "cover": "../../datas/images/resource/playlist10.jpg",
     "url": "../../datas/audio/red-swan.mp3",
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 49500,
+    "monthlyPlays": 202000,
+    "totalPlays": 790000,
+    "likes": 75000
   },
   {
     "id": 10,
@@ -83,7 +119,11 @@
     "artist": "Ponchet",
     "cover": "../../datas/images/resource/playlist11.jpg",
     "url": "../../datas/audio/ponchet.mp3",
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 41300,
+    "monthlyPlays": 153200,
+    "totalPlays": 670000,
+    "likes": 60300
   },
   {
     "id": 11,
@@ -91,7 +131,11 @@
     "artist": "Quân A.P",
     "cover": "../../datas/images/resource/playlist12.jpg",
     "url": "../../datas/audio/crush.mp3",
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 47000,
+    "monthlyPlays": 179000,
+    "totalPlays": 720000,
+    "likes": 72000
   },
   {
     "id": 12,
@@ -99,7 +143,11 @@
     "artist": "Jaxomy, Agatino Romero",
     "cover": "../../datas/images/resource/playlist7.jpg",
     "url": "../../datas/audio/pedro.mp3",
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 68000,
+    "monthlyPlays": 264500,
+    "totalPlays": 890000,
+    "likes": 79000
   },
   {
     "id": 13,
@@ -108,6 +156,10 @@
     "cover": "../../datas/images/resource/banner-music.jpg",
     "url": "../../datas/audio/sekai-no-owari.mp3",
     "featured": true,
-    "releaseDate": "2023"
+    "releaseDate": "2023",
+    "weeklyPlays": 39000,
+    "monthlyPlays": 145000,
+    "totalPlays": 610000,
+    "likes": 55800
   }
 ]

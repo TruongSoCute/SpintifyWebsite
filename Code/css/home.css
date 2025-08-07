@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Righteous&family=Rowdies:wght@300;400;700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +7,18 @@
     font-family: 'Inter', sans-serif;
 }
 
-
 body {
     background-color: #191919;
     color: #ffffff;
+    scrollbar-width: thin;
+    -webkit-scrollbar-thumb {
+        background-color: #444;
+        border-radius: 10px;
+    }
+    -webkit-scrollbar-track {
+        background-color: #181818;
+    }
+    scrollbar-color: #444 #181818;
 }
 
 .navbar {
@@ -34,8 +41,7 @@ button:hover {
     transform: scale(1.05);
 }
 .logo-image {
-    width: 32px;
-    
+    width: 50px;
 }
 
 .logo-display-text {
