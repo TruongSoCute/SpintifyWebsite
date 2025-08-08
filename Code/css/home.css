@@ -386,7 +386,7 @@ footer {
 .footer-content {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     justify-content: space-between;
 }
