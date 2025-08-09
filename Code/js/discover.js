@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('../../datas/json/musics.json')
         .then(r => r.json())
         .then(m => {
+            let musicsLocal = localStorage.getItem('musics');
+            if (musicsLocal) {
+                m = JSON.parse(musicsLocal);
+            }
             ms = m;
             if (isLibraryPage) {
                 let lib = getLibrary();
@@ -89,6 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
             fetch('../../datas/json/musics.json')
                 .then(r => r.json())
                 .then(m => {
+                    let musicsLocal = localStorage.getItem('musics');
+                    if (musicsLocal) {
+                        m = JSON.parse(musicsLocal);
+                    }
                     let f = [];
                     if (b.dataset.section === 'top') f = m.filter(x => x.trending);
                     else if (b.dataset.section === 'album') f = m.filter(x => x.featured || x.id <= 8);

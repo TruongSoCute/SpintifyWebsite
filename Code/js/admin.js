@@ -197,17 +197,21 @@ uploadForm.onsubmit = function(e) {
 
 musicForm.onsubmit = function(e) {
     e.preventDefault();
-    const id = musicForm.musicId.value ? Number(musicForm.musicId.value) : Date.now();
+    const id = musics.length > 0 ? musics[musics.length - 1].id + 1 : 1;
     const music = {
         id,
         title: musicForm.title.value,
         artist: musicForm.artist.value,
-        releaseDate: musicForm.releaseDate.value,
+        releaseDate: musicForm.releaseDate.value ? new Date(musicForm.releaseDate.value).getFullYear() : '',
         url: musicForm.url.value,
         cover: musicForm.cover.value,
-        stats: { plays: 0, likes: 0, shares: 0, favorites: 0, comments: 0 },
-        lyrics: null
+        trending: false,
+        weeklyPlays: 0,
+        monthlyPlays: 0,
+        totalPlays: 0,
+        likes: 0
     };
+
     if (musicForm.musicId.value) {
         const idx = musics.findIndex(m => m.id === id);
         musics[idx] = music;

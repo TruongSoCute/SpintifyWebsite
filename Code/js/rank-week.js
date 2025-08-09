@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("../../datas/json/musics.json")
         .then(r => r.json())
         .then(arr => {
+            let musicsLocal = localStorage.getItem('musics');
+            if (musicsLocal) {
+                arr = JSON.parse(musicsLocal);
+            }
             arr.sort((a, b) => (b.weeklyPlays || 0) - (a.weeklyPlays || 0));
             list.innerHTML = `
                 <div class="rank-table-header">
