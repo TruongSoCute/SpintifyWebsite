@@ -49,29 +49,7 @@ function loadMusicData() {
 }
 
 function showLoadingError() {
-    const errMsg = `
-        <div class="error-message">
-            <p>Không thể tải danh sách nhạc. Vui lòng thử lại sau.</p>
-            <button class="retry-button">Thử lại</button>
-        </div>
-    `;
-    if (el.trendList) {
-        el.trendList.innerHTML = errMsg;
-    }
-    if (el.suggestList) {
-        el.suggestList.innerHTML = errMsg;
-    }
-    document.querySelectorAll('.retry-button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            if (el.trendList) {
-                el.trendList.innerHTML = '<div class="loading-indicator">Đang tải danh sách nhạc...</div>';
-            }
-            if (el.suggestList) {
-                el.suggestList.innerHTML = '<div class="loading-indicator">Đang tải danh sách nhạc...</div>';
-            }
-            loadMusicData();
-        });
-    });
+    alert('Không thể tải danh sách nhạc. Vui lòng thử lại sau.');
 }
 
 function renderMusicLists() {
@@ -93,7 +71,7 @@ function renderMusicLists() {
 function renderMusicItems(musicList, container) {
     if (!container) return;
     if (!musicList.length) {
-        container.innerHTML = '<div class="empty-message">Không có bài hát nào.</div>';
+        container.innerHTML = '<p class="paragraph">Không có bài hát nào.</p>';
         return;
     }
     musicList.forEach(music => {
